@@ -263,10 +263,6 @@ button {
   margin-left: 20px;
 }
 
-.header__list li:last-child {
-  margin-left: 50px;
-}
-
 .header__link {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.853);
@@ -284,6 +280,42 @@ button {
 
 .header__burger {
   display: none;
+}
+
+@media (max-width: 1120px) {
+  .header__list li:last-child {
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .header__list li:last-child {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .header__list li:last-child {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__list li:last-child {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header__list li:last-child {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 910px) {
+  .header__list li:last-child {
+    margin-left: 20px;
+  }
 }
 
 .logo-img {
@@ -374,11 +406,14 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-btn-group .signUp {
   display: inline-block;
-  border: 1px solid #27ae5f;
+  color: #27ae5f;
   border-radius: 3px;
   padding: 3% 10px;
   text-align: center;
@@ -388,28 +423,22 @@ button {
 }
 
 .header-btn-group .signUp:hover {
-  border: 1px solid rgba(255, 255, 255, 0.493);
-  color: #27ae5f;
   -webkit-box-shadow: 0 0 4px 2px rgba(39, 174, 95, 0.322);
           box-shadow: 0 0 4px 2px rgba(39, 174, 95, 0.322);
   background-color: rgba(0, 0, 0, 0.801);
 }
 
 .header-btn-group .signIn {
-  border: 1px solid #27ae5f;
   border-radius: 3px;
-  padding: 3% 10px;
+  padding: 1%;
   text-align: center;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.header-btn-group .signIn:hover {
-  border: 1px solid rgba(255, 255, 255, 0.493);
-  color: #27ae5f;
-  -webkit-box-shadow: 0 0 4px 2px rgba(39, 174, 95, 0.322);
-          box-shadow: 0 0 4px 2px rgba(39, 174, 95, 0.322);
-  background-color: rgba(0, 0, 0, 0.801);
+.header-btn-group .signIn img {
+  max-width: 35px;
+  margin-top: 8px;
 }
 
 @media (max-width: 425px) {
